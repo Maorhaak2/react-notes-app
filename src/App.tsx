@@ -1,3 +1,4 @@
+import './App.css';
 import NotesPage from "./components/Page"
 
 function App() {

@@ -7,14 +7,13 @@ export type NoteType = {
     author_email : string
 }
 
-function Note( {id, title, content, author, author_email} : NoteType) {
+function Note({ id, title, content, author }: NoteType) {
     return (
         <div className="note" id={id}>
-            <h2> {title}</h2>
-            <p>
-                {content}
-            </p>
-            <small> By {author + author_email}</small>
+            <h2>{title}</h2>
+            <small>By {author}</small>
+            <br />
+            {content}
         </div>
     )
 }
